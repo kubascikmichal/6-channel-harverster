@@ -232,7 +232,7 @@ void main(void)
 		adc_raw_to_millivolts(adv_vref, ADC_GAIN, ADC_RESOLUTION, &mv_3);
 		adc_raw_to_millivolts(adv_vref, ADC_GAIN, ADC_RESOLUTION, &mv_4);
 		adc_raw_to_millivolts(adv_vref, ADC_GAIN, ADC_RESOLUTION, &mv_5);
-		printk("[%.2f; %.2f; %.2f; %.2f; %.2f; %.2f]\n\r", mv_0/3000.,mv_1/3000.,mv_2/3000.,mv_3/3000.,mv_4/3000.,mv_5/3000.);
+		printk("%.2f, %.2f, %.2f, %.2f, %.2f, %.2f\n\r", mv_0/3000.,mv_1/3000.,mv_2/3000.,mv_3/3000.,mv_4/3000.,mv_5/3000.);
 		k_msleep(SLEEP_INTERVAL);
 	}
         return 0;
